@@ -89,18 +89,18 @@ ppinet.sp(g,output_folder_name,4932,genes)
 
 # Examples
 
-A *data* folder contains a list with 300 genes of *S. cerevisiae* (input.txt file) and a list with 9 interesting genes (genes.txt file)
+A main folder contains a list with 300 genes of *S. cerevisiae* (input.txt file) and a list with 9 interesting genes (genes.txt file)
 
 * Example of a biological network from the list of 300 genes
 
 ```shell
-ppinet --input_file data/input.txt --organism 4932 --output_file yeast_output
+ppinet --input_file input.txt --organism 4932 --output_file yeast_output
 ```
 
 * Example of output containing a list of genes of interest
 
 ```shell
-ppinet --input_file data/input.txt --organism 4932 --output_file yeast_output --genes data/genes.txt
+ppinet --input_file input.txt --organism 4932 --output_file yeast_output --genes genes.txt
 ```
 
 
