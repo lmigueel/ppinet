@@ -4,11 +4,14 @@
 
 To build and install from source, run
 
+```shell
 python setup.py install
-
+```
 You can also install from pip with
 
+```shell
 pip install ppinet
+``` 
 
 # Overview
 
