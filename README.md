@@ -28,7 +28,7 @@ ppinet features include:
 
 ppinet can be executed from the command line using the ppinet command. It takes a gene list file, output folder name and organism taxid (based on STRING) as input and outputs a several analysis of the biological network generated. 
 
-```shell
+```
 usage: ppinet [-h] --input_file INPUT_FILE --organism ORGANISM --output_folder OUTPUT_FOLDER [--genes GENES]
 
 optional arguments:
@@ -44,19 +44,19 @@ example: python3 ppinet.py --input_file gene_list.txt --output ppinet_output --o
 ```
 In the output_folder, ppinet generates the following outputs:
 
-  i) species.txt :  a file containg all STRING taxonomy IDs. If you provide a invalid taxid, we advised to inspect this file.
-  ii) degree_distribution.pdf : a PDF file containing the degree distribution of the biological network
-  iii) network.png : a snapshot of the biological network
-  iv) network_bc.png : a snapshot of the biological network based on betweenness centrality 
-  v) nodes_network2cyto.txt : all nodes and your attributes for Cytoscape analysis
-  vi) edges_network2cyto.txt : all edges and your attributes for Cytoscape analysis
-  vii) reports_ppinet.txt : general metrics of the biological network
-  viii) enrichment.txt : enrichment analysis of the biological network
+1. species.txt :  a file containg all STRING taxonomy IDs. If you provide a invalid taxid, we advised to inspect this file.
+2. degree_distribution.pdf : a PDF file containing the degree distribution of the biological network
+3. network.png : a snapshot of the biological network
+4. network_bc.png : a snapshot of the biological network based on betweenness centrality 
+5. nodes_network2cyto.txt : all nodes and your attributes for Cytoscape analysis
+6. edges_network2cyto.txt : all edges and your attributes for Cytoscape analysis
+7. reports_ppinet.txt : general metrics of the biological network
+8. enrichment.txt : enrichment analysis of the biological network
   
   if the --genes argument is taken as input, three extra files will be generated:
-    ix) louvain_clustering.png :  louvain community detection of the network
-    x)  enrichment_shortestpath.txt : a file containing the enrichment analysis of all genes present in all shorthest-path from interesting genes
-    xi) shortestpath_BC.txt : a file containing all interesting genes and its betweenness centrality (bc). As higher the value of bc as more important the gene of interest becomes.
+    9. louvain_clustering.png :  louvain community detection of the network
+    10. enrichment_shortestpath.txt : a file containing the enrichment analysis of all genes present in all shorthest-path from interesting genes
+    11. shortestpath_BC.txt : a file containing all interesting genes and its betweenness centrality (bc). As higher the value of bc as more important the gene of interest becomes.
     
 # Python library usage
 
@@ -97,7 +97,7 @@ ppinet --input_file data/input.txt --organism 4932 --output_file yeast_output
 ```
 
 * Example of output containing a list of genes of interest
-* 
+
 ```shell
 ppinet --input_file data/input.txt --organism 4932 --output_file yeast_output --genes data/genes.txt
 ```
