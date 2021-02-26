@@ -53,10 +53,11 @@ In the output_folder, ppinet generates the following outputs:
 7. reports_ppinet.txt : general metrics of the biological network
 8. enrichment.txt : enrichment analysis of the biological network
   
-  if the --genes argument is taken as input, three extra files will be generated:
-    9. louvain_clustering.png :  louvain community detection of the network
-    10. enrichment_shortestpath.txt : a file containing the enrichment analysis of all genes present in all shorthest-path from interesting genes
-    11. shortestpath_BC.txt : a file containing all interesting genes and its betweenness centrality (bc). As higher the value of bc as more important the gene of interest becomes.
+if the --genes argument is taken as input, three extra files will be generated:
+
+9. louvain_clustering.png :  louvain community detection of the network
+10. enrichment_shortestpath.txt : a file containing the enrichment analysis of all genes present in all shorthest-path from interesting genes
+11. shortestpath_BC.txt : a file containing all interesting genes and its betweenness centrality (bc). As higher the value of bc as more important the gene of interest becomes.
     
 # Python library usage
 
